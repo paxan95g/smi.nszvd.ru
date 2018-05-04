@@ -1,0 +1,56 @@
+// vars
+$darkgray: #302f2c;
+$gray: #e6e4e1;
+$bg_lightgray: #f5f3f0;
+
+$textcolor: #302f2c;
+$textcolor_hover: #626262;
+
+$green : #6cc2b4;
+$green_hover: #56b4a4;
+
+$section_padding_top: 95px;
+ 
+
+// settings
+@import "_settings/normilize";
+@import "_settings/bootstrap";
+@import "_settings/settings";
+@import "_settings/mixins";
+@import "../fa/scss/font-awesome";
+
+// styles
+@import "_styles/_general";
+@import "_styles/header";
+@import "_styles/slideup";
+@import "_styles/main_slider";
+@import "_styles/main_news";
+@import "_styles/main_imgblocks";
+@import "_styles/main_video";
+@import "_styles/main_interview";
+@import "_styles/main_projects";
+@import "_styles/main_form";
+@import "_styles/anounces";
+@import "_styles/categories";
+@import "_styles/pagination";
+@import "_styles/video";
+@import "_styles/interview";
+@import "_styles/projects";
+@import "_styles/detail";
+@import "_styles/contacts";
+@import "_styles/footer";
+
+
+
+/*******************************/////
+@media (min-width: 768px) {
+
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 1200px) {
+
+}
+
+

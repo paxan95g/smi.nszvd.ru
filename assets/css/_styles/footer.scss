@@ -1,0 +1,261 @@
+$footer_colottitle: #a5a5a5;
+
+.footer {
+  background: $darkgray;
+}
+.footer__body {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.footer__title {
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 15px;
+  color: $footer_colottitle;
+  font-weight: 600;
+  display: block;
+
+  &:after {
+    content: '';
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: $footer_colottitle;
+  }
+}
+.footer__contacts {
+  font-size: 14px;
+  padding: 0;
+}
+.footer__contacts-content {
+  display: block;
+  color: #fff;
+  margin-top: 15px;
+  line-height: 30px;
+}
+.footer__contacts-reg {
+  display: block;
+  font-size: 15px;
+  color: $green;
+  margin-top: 30px;
+  font-weight: 600;
+}
+.footer__social {
+  font-size: 16px;
+  padding: 0;
+  margin-top: 35px;
+}
+.header__social-list_footer {
+  padding-left: 0;
+  float: unset;
+  margin-top: 15px;
+}
+.header__social-item:nth-child(1) {
+  margin: 0;
+}
+.header__social-link_footer {
+
+  & i {
+    margin-top: 0;
+    margin-left: 0;
+    vertical-align: middle;
+  }
+}
+.footer__menu {
+  padding: 0;
+  margin-top: 35px;
+}
+.footer__menu-list {
+  column-count: 2;
+  column-gap: 40px;
+  margin-top: 15px;
+}
+.footer__menu-link {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  transition: color 0.2s;
+  padding: 5px 0;
+  display: inline-block;
+
+  &:active,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: #fff;
+  }
+  &:hover {
+    color: #6f6f6f;
+    text-decoration: none;
+  }
+}
+.footer__title_contacts {
+  &:link,
+  &:visited,
+  &:active {
+    color: #a5a5a5;
+  }
+
+  &:hover {
+    color: #6f6f6f;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer__contacts-block {
+    padding-right: 30px;
+  }
+  .footer__social {
+    padding: 0 0 0 20px;
+    margin-top: 0;
+  }
+  .header__social-link_footer {
+
+    & i {
+      margin-top: -6px;
+      margin-left: 0;
+      vertical-align: middle;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .footer__body {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .footer__title {
+    font-size: 16px;
+    padding-bottom: 15px;
+    display: block;
+
+    &:after {
+      content: '';
+      height: 1px;
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+  }
+  .footer__contacts {
+    font-size: 15px;
+    padding: 0;
+  }
+  .footer__contacts-block {
+    padding-right: 16.5%;
+  }
+  .footer__contacts-content {
+    display: block;
+    margin-top: 14px;
+  }
+  .footer__contacts-reg {
+    display: block;
+    font-size: 15px;
+    margin-top: 35px;
+  }
+  .footer__social {
+    font-size: 16px;
+    padding: 0;
+  }
+  .footer__social-block {
+    padding-right: 25%;
+  }
+  .header__social-list_footer {
+    padding-left: 0;
+    float: unset;
+    margin-top: 15px;
+  }
+  .header__social-item:nth-child(1) {
+    margin: 0;
+  }
+  .header__social-link_footer {
+    & i {
+      margin-top: -10px;
+      margin-left: 0;
+    }
+  }
+  .footer__menu {
+    padding: 0;
+    margin-top: 0;
+  }
+  .footer__menu-list {
+    column-count: 2;
+    column-gap: 40px;
+    margin-top: 15px;
+  }
+  .footer__menu-link {
+    font-size: 15px;
+    padding: 5px 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer__body {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .footer__title {
+    font-size: 18px;
+    padding-bottom: 15px;
+    display: block;
+
+    &:after {
+      content: '';
+      height: 1px;
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+  }
+  .footer__contacts {
+    font-size: 15px;
+    padding: 0;
+  }
+  .footer__contacts-block {
+    padding-right: 17%;
+  }
+  .footer__contacts-content {
+    display: block;
+    margin-top: 15px;
+  }
+  .footer__contacts-reg {
+    display: block;
+    font-size: 16px;
+    margin-top: 40px;
+  }
+  .footer__social {
+    font-size: 16px;
+    padding: 0;
+  }
+  .footer__social-block {
+    padding-right: 25%;
+  }
+  .header__social-list_footer {
+    padding-left: 0;
+    float: unset;
+    margin-top: 15px;
+  }
+  .header__social-item:nth-child(1) {
+    margin: 0;
+  }
+  .header__social-link_footer {
+    & i {
+      margin-top: -11px;
+      margin-left: 0;
+    }
+  }
+  .footer__menu-list {
+    column-count: 2;
+    column-gap: 40px;
+    margin-top: 15px;
+  }
+  .footer__menu-link {
+    font-size: 16px;
+    padding: 5px 0;
+  }
+}

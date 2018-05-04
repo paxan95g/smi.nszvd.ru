@@ -1,0 +1,52 @@
+html, body {
+  font-family: Tahoma, Verdana, Arial;
+  font-size: 13px;
+  //line-height: 1.42;
+  line-height: 1.7em;
+  color: $textcolor;
+}
+div {
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+  word-wrap: break-word;
+}
+a {
+  text-decoration: none;
+
+  &:link,
+  &:active,
+  &:hover,
+  &:visited {
+    text-decoration: none;
+  }
+}
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+@media (min-width: 768px) {
+  html, body {
+    font-size: 13px;
+    line-height: 28px;
+  }
+}
+@media (min-width: 992px) {
+  html, body {
+    font-size: 13px;
+    line-height: 28px;
+  }
+
+}
+@media (min-width: 1200px) {
+  html, body {
+    font-size: 14px;
+    line-height: 30px;
+  }
+}

@@ -1,0 +1,31 @@
+.categories {
+  display: block;
+  margin-top: 12px;
+
+}
+.categories__item {
+  display: inline-block;
+  margin-right: 23px;
+  margin-top: 10px;
+}
+.categories__link {
+  display: inline-block;
+  font-weight: 600;
+  color: $textcolor;
+  text-transform: uppercase;
+  border-bottom: 3px solid $gray;
+  padding: 0;
+  text-decoration: none;
+  transition: color 0.2s, border-bottom-color 0.2s;
+
+  &:active,
+  &:visited,
+  &:link {
+    color: $textcolor;
+  }
+  &:hover {
+    text-decoration: none;
+    color: $textcolor_hover;
+    border-bottom-color: #afafaf;
+  }
+}

@@ -1,0 +1,269 @@
+.display-none {
+  display: none!important;
+}
+
+.general-title {
+  text-transform: uppercase;
+  font-size: 32px;
+  margin: 0;
+  float: none;
+}
+.main {
+  padding-bottom: $section_padding_top;
+  background: $bg_lightgray;
+}
+.page_content {
+  padding-top: $section_padding_top;
+
+  &.mainpage {
+    padding-top: 0;
+  }
+}
+
+.list__item {
+  margin-top: 30px!important;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+.item__date {
+  display: block;
+  color: #bcbab8;
+  font-weight: 600;
+}
+.item__title-q {
+  display: block;
+  font-size: 0px;
+  font-weight: 600;
+  margin: 20px 0 0;
+  text-decoration: none;
+  outline: none;
+  transition: color 0.2s;
+
+  &:before {
+    content: '«';
+    font-size: 20px;
+    transition: color 0.2s;
+  }
+  &:after {
+    content: '»';
+    font-size: 20px;
+    transition: color 0.2s;
+  }
+  &:hover {
+    .item__title-link {
+      color: $textcolor_hover;
+    }
+    &:before {
+      content: '«';
+      color: $textcolor_hover;
+    }
+    &:after {
+      content: '»';
+      color: $textcolor_hover;
+    }
+  }
+}
+.item__title-link {
+  color: $textcolor;
+  font-size: 20px;
+  outline: none;
+  transition: color 0.2s;
+  &:link,
+  &:active,
+  &:visited {
+   color: $textcolor;
+  }
+}
+.item__text {
+  margin-top: 15px;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+.item-link-block {
+  display: block;
+}
+.item__link {
+  display: inline-block;
+  margin-top: 20px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #bcbab8;
+  border-bottom: 1px solid #bcbab8;
+  transition: color 0.2s, border-bottom-color 0.2s;
+
+  &:link,
+  &:active,
+  &:visited {
+    color: #bcbab8;
+  }
+
+  &:hover {
+    color: $textcolor_hover;
+    border-bottom-color: $textcolor_hover;
+  }
+}
+
+.item__body {
+  padding: 25px 25px 25px 15px;
+}
+
+.list2__item {
+  display: block;
+  width: 100%;
+  min-height: 200px;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  margin-top: 30px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+.item2__title {
+  font-size: 28px;
+  text-transform: uppercase;
+  line-height: 1.1em;
+  margin-bottom: 0;
+}
+.item2__text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  display: block;
+}
+.item2__body {
+  display: block;
+  min-height: 200px;
+  background: rgba(48, 47, 44, 0.5);
+  color: #fff;
+  padding: 30px;
+  transition: background-color 0.4s;
+
+  &:link,
+  &:visited,
+  &:active,
+  &:hover {
+    color: #fff;
+  }
+}
+
+@media (min-width: 768px) {
+  .general-title {
+    font-size: 32px;
+  }
+  .item__title-q {
+    font-size: 0;
+    margin: 10px 0 0;
+
+    &:before,
+    &:after {
+      font-size: 20px;
+    }
+  }
+  .item2__title {
+    font-size: 31px;
+  }
+  .list2__item {
+    min-height: 250px;
+  }
+  .item2__body {
+    min-height: 250px;
+    padding: 35px;
+  }
+  .item2__text {
+    overflow: unset;
+    white-space: unset;
+    text-overflow: unset;
+  }
+}
+@media (min-width: 992px) {
+  .general-title {
+    font-size: 32px;
+  }
+  .item__body {
+    padding: 20px 25px 20px 15px;
+  }
+  .item__title-q {
+    margin: 10px 0 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .item__text {
+    margin-top: 10px;
+  }
+  .item__link {
+    margin-top: 15px;
+  }
+  .item2__title {
+    font-size: 33px;
+  }
+  .list2__item {
+    min-height: 280px;
+  }
+  .item2__body {
+    min-height: 280px;
+    padding: 40px;
+  }
+
+}
+@media (min-width: 1200px) {
+  .general-title {
+    font-size: 36px;
+  }
+  .item__title-q {
+    font-size: 0;
+    margin: 20px 0 0;
+
+    &:before,
+    &:after {
+      font-size: 24px;
+    }
+  }
+  .item__title-link {
+    font-size: 24px;
+  }
+  .item__body {
+    padding: 35px 30px 35px 15px;
+  }
+  .item2__title {
+    font-size: 36px;
+  }
+  .list2__item {
+    min-height: 310px;
+  }
+  .item2__body {
+    min-height: 310px;
+    padding: 50px;
+  }
+}
+
+.item__title-q_multiline {
+  white-space: unset;
+  overflow: unset;
+  text-overflow: unset;
+}
+.item__title-q_nohover {
+  white-space: unset;
+  overflow: unset;
+  text-overflow: unset;
+
+  &:hover {
+    .item__title-link {
+      color: $textcolor;
+    }
+    &:before {
+      content: '«';
+      color: $textcolor;
+    }
+    &:after {
+      content: '»';
+      color: $textcolor;
+    }
+  }
+}

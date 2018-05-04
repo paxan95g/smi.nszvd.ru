@@ -1,0 +1,60 @@
+.slideup {
+  display: none;
+  position: fixed;
+  background: $green;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+  text-align: center;
+  opacity: 0.5;
+
+  bottom: 30px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  padding-top: 7px;
+
+  &:active,
+  &:link,
+  &:visited {
+    color: #fff;
+  }
+  &:hover {
+    opacity: 1;
+  }
+  & i {
+    color: #fff;
+    &:active,
+    &:link,
+    &:visited,
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+.slideup-visible {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .slideup {
+    bottom: 30px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    padding-top: 4px;
+  }
+}
+
+@media (min-width: 992px) {
+  .slideup {
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+    padding-top: 6px;
+  }
+}

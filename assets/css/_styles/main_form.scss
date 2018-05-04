@@ -1,0 +1,218 @@
+.main__form {
+  //background: $bg_lightgray;
+  padding-top: $section_padding_top;
+  position: relative;
+
+  & textarea:focus,
+  & input:focus {
+    outline: 2px solid #6cc2b4;
+  }
+}
+.main__form textarea::-webkit-input-placeholder,
+.main__form input::-webkit-input-placeholder {
+  color: #a8a7a3;
+}
+.main__form textarea::-moz-placeholder,
+.main__form input::-moz-placeholder {
+  color: #a8a7a3;
+}
+.main__form textarea:-moz-placeholder,
+.main__form input:-moz-placeholder {
+  color: #a8a7a3;
+}
+.main__form textarea:-ms-input-placeholder,
+.main__form input:-ms-input-placeholder {
+  color: #a8a7a3;
+}
+.main__form-border {
+  border: 14px solid #6cc2b4;
+  border-left: 11px solid #6cc2b4;
+  border-right: 11px solid #6cc2b4;
+  border-image: url(../img/form-border.png) 15 15 round;
+
+  @include clearfix();
+}
+.main__form-inner {
+  margin: 0 auto;
+  float: unset;
+}
+.main__form-title {
+  display: block;
+  margin: 36px 0 0;
+  line-height: 1em;
+}
+.main__form-descr {
+  display: block;
+  margin: 36px 0 0;
+}
+.form__body {
+  padding: 0;
+  margin: 25px 0 0;
+}
+.form__title,
+.form__textarea,
+.form__name,
+.form__email,
+.form__company,
+.form__address,
+.form__input {
+  display: block;
+  color: $textcolor;
+  background: #fff;
+  width: 100%;
+  border: none;
+  margin: 10px 0 0;
+  padding: 13px 18px;
+}
+.form__textarea {
+  resize: none;
+  line-height: 22px;
+}
+.form__checkbox {
+  font-size: 11px;
+  position: relative;
+  margin-top: 10px;
+}
+.form__body input[type=checkbox]:checked + label:before {
+  content: "\2713";
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  font-size: 25px;
+  color: #6cc2b4;
+  text-align: center;
+  line-height: 15px;
+  background: white;
+  padding: 8px;
+  padding-left: 5px;
+  padding-top: 10px;
+  display: inline-block;
+}
+.form__body label:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  margin-right: 15px;
+  left: 0;
+  background-color: #fff;
+}
+.form__pdn {
+  display: none;
+}
+.form__pdn-label {
+  padding: 15px 0;
+  color: #a8a7a3;
+  margin: 10px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.form_pdn-link {
+  color: #a8a7a3;
+  border-bottom: 1px solid #a8a7a3;
+  text-decoration: none;
+  vertical-align: middle;
+  transition: 0.15s;
+
+  &:link,
+  &:active,
+  &:visited {
+    color: #a8a7a3;
+    text-decoration: none;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: $textcolor;
+  }
+}
+.form__submit {
+  display: inline-block;
+  background: #6cc2b4;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px 0;
+  outline: none;
+  border: none;
+  margin: 30px 0;
+  text-align: center;
+  max-width: 280px;
+  min-width: 100%;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  transition: tansfotm 0.05s, background 0.15s;
+
+  &:hover {
+    background: #56b4a4;
+  }
+  &:focus {
+    outline: none!important;
+  }
+  &:active {
+    transform: scale(0.99);
+  }
+}
+@media (min-width: 550px) {
+  .form__submit {
+    min-width: unset;
+  }
+}
+@media (min-width: 768px) {
+  .main__form-title {
+    line-height: unset;
+  }
+  .form__body input[type=checkbox]:checked + label:before {
+    font-size: 21px;
+    padding: 10px;
+  }
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+  .main__form-title {
+    margin: 36px 0 0;
+  }
+  .main__form-descr {
+    margin: 36px 0 0;
+  }
+  .form__body {
+    padding: 0;
+    margin: 25px 0 0;
+  }
+  .form__title,
+  .form__textarea,
+  .form__name,
+  .form__email,
+  .form__company,
+  .form__address,
+  .form__input {
+    padding: 15px 18px;
+  }
+  .form__textarea {
+    line-height: 22px;
+  }
+  .form__checkbox {
+    font-size: 11px;
+    margin-top: 10px;
+  }
+  .form__body input[type=checkbox]:checked + label:before {
+    font-size: 21px;
+    line-height: 15px;
+    padding: 10px;
+  }
+  .form__body label:before {
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+    left: 0;
+  }
+  .form__pdn-label {
+    padding: 15px 0;
+    margin: 10px 0 0;
+  }
+  .form__submit {
+    padding: 17px 0;
+  }
+}

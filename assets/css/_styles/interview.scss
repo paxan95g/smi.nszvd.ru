@@ -1,0 +1,59 @@
+.interview {
+  margin-top: 55px;
+  position: relative;
+}
+.interview__item {
+  overflow: hidden;
+
+
+  &:hover {
+    .item2__body {
+      background: rgba(48, 47, 44, 0.65);
+    }
+  }
+
+}
+
+.item2__title_interview {
+  position: relative;
+  margin-top: 0.35em;
+  padding-top: 0.8em;
+
+  &:before {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 53px;
+    background: #fff;
+
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .item2__title_interview {
+
+    &:before {
+      width: 59px;
+    }
+  }
+
+}
+@media (min-width: 992px) {
+  .item2__title_interview {
+
+    &:before {
+      width: 63px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .item2__title_interview {
+
+    &:before {
+      width: 69px;
+    }
+  }
+}

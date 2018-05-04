@@ -1,0 +1,264 @@
+.main__interview {
+  //background: $bg_lightgray;
+  padding-top: $section_padding_top;
+  overflow: hidden;
+
+  .slider-btn-left  {
+    right: 100%;
+    margin-right: 45px;
+  }
+  .slider-btn-right {
+    left: 100%;
+    margin-left: 45px;
+  }
+  .slider-btn-left,
+  .slider-btn-right {
+    position: absolute;
+    right: 100%;
+    width: 38px;
+    z-index: 10;
+    cursor: pointer;
+    top: 50%;
+
+    & img {
+      width: 100%;
+      opacity: 0.4;
+      transition: color 0.2s;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+.main__interview-item {
+  outline: none;
+  border: none;
+  overflow: hidden;
+}
+.main__interview-title {
+}
+.main__interview-item {
+  margin-top: 50px;
+  background: #fff;
+  @include clearfix();
+}
+.main__interview-item-img-block {
+  padding: 0;
+}
+.main__interview-item-img {
+  display: block;
+  width: 100%;
+}
+.main__interview-body-paddingbox {
+  padding: 25px;
+}
+.main__interview-date {
+  display: block;
+  color: #bcbab8;
+  font-weight: 600;
+  font-size: 14px;
+}
+.main__interview-item-title {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 0 0;
+}
+.main__interview-text {
+  display: block;
+  margin: 20px 0 0;
+  overflow: hidden;
+}
+.main__interview-item-title-link,
+.main__interview-item-img-link {
+  text-decoration: none;
+  outline: none;
+
+  &:link,
+  &:active,
+  &:visited,
+  &:hover {
+    text-decoration: none;
+    outline: none;
+  }
+}
+.main__interview-item-img-link {
+  display: block;
+}
+.main__interview-item-title-link {
+  color: $textcolor;
+  transition: color 0.2s;
+  &:link,
+  &:active,
+  &:visited {
+    color: $textcolor;
+  }
+  &:hover {
+    text-decoration: none;
+    color: $textcolor_hover;
+  }
+}
+@media (max-width: 767px) {
+  .main__interview {
+    .slider-btn-left  {
+      top: 0;
+      left: unset;
+      right: 43px;
+      margin: 0;
+    }
+    .slider-btn-right {
+      top: 0;
+      right: 0;
+      left: unset;
+      margin: 0;
+    }
+    .slider-btn-left,
+    .slider-btn-right {
+      width: 33px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .main__interview-item-img-block {
+    padding-left: 0;
+    padding-right: 15px;
+  }
+  .main__interview-item-title {
+    font-size: 20px;
+    margin: 10px 0 0;
+  }
+  .main__interview-item-img-link {
+    border-radius: 0 0 50% 0;
+    overflow: hidden;
+  }
+  .main__interview-body-paddingbox {
+    padding: 25px 30px 25px 15px;
+    max-height: 423px;
+  }
+  .main__interview-text {
+    margin: 15px 0 0;
+    max-height: 275px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 905px) {
+  .main__interview {
+    .slider-btn-left  {
+      margin: 0;
+      top: 0;
+      left: unset;
+      right: 43px;
+
+    }
+    .slider-btn-right {
+      margin: 0;
+      top: 0;
+      left: unset;
+      right: 0;
+    }
+    .slider-btn-left,
+    .slider-btn-right {
+      width: 33px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .main__interview-text {
+    margin: 15px 0 0;
+    max-height: 275px;
+  }
+  .main__interview-body-paddingbox {
+    padding: 25px 30px 25px 15px;
+    max-height: 423px;
+  }
+  .main__interview-item-img-link {
+    border-radius: unset;
+    overflow: unset;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1120px) {
+  .main__interview {
+    .slider-btn-left  {
+      margin: 0;
+      top: -5px;
+      left: unset;
+      right: 50px;
+
+    }
+    .slider-btn-right {
+      margin: 0;
+      top: -5px;
+      left: unset;
+      right: 0;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .main__interview {
+    background: $bg_lightgray;
+    padding-top: $section_padding_top;
+
+    .slider-btn-left {
+      right: 100%;
+      //margin-right: 30px;
+      //margin-right: 45px;
+    }
+    .slider-btn-right {
+      left: 100%;
+      //margin-left: 30px;
+      //margin-left: 45px;
+    }
+    .slider-btn-left,
+    .slider-btn-right {
+      position: absolute;
+      right: 100%;
+      width: 38px;
+      z-index: 10;
+      top: 50%;
+    }
+  }
+  .main__interview-item {
+    margin-top: 50px;
+  }
+  .main__interview-item-img-block {
+    padding-left: 0;
+  }
+  .main__interview-item-img {
+    width: 100%;
+  }
+  .main__interview-body-paddingbox {
+    padding: 43px 30px 43px 15px;
+  }
+  .main__interview-date {
+    font-size: 14px;
+  }
+  .main__interview-item-title {
+    font-size: 24px;
+    margin: 20px 0 0;
+  }
+  .main__interview-text {
+    margin: 20px 0 0;
+    max-height: 270px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1320px) {
+  .main__interview {
+    .slider-btn-left  {
+      margin: 0;
+      top: -5px;
+      left: unset;
+      right: 50px;
+    }
+    .slider-btn-right {
+      margin: 0;
+      top: -5px;
+      left: unset;
+      right: 0;
+    }
+  }
+}
