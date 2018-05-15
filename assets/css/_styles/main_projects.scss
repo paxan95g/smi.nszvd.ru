@@ -71,8 +71,17 @@
   .main__projects-item-content {
     opacity: 0;
   }
+  .main__projects-item {
+    height: 319px;
+  }
 }
 @media (min-width: 992px) {
+  .main__projects-item {
+    height: 271px;
+  }
 }
 @media (min-width: 1200px) {
+  .main__projects-item {
+    height: 332px;
+  }
 }

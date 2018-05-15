@@ -22,6 +22,11 @@ $block_height_lg: 309px;
 .main__item-img_1 {
   width: 100%;
 }
+.main__item-img {
+  &.main__item-img_2 {
+    height: 220px;
+  }
+}
 .main__item-date {
   display: block;
   color: #bcbab8;
@@ -29,7 +34,7 @@ $block_height_lg: 309px;
 }
 .main__item-title {
   display: block;
-  font-size: 0px;
+  font-size: 0;
   font-weight: 600;
   margin: 20px 0 0;
   transition: color 0.2s;
@@ -98,8 +103,15 @@ $block_height_lg: 309px;
     outline: none;
   }
 }
+.main__item-img-conf {
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
 .main__item-img-link {
   display: block;
+  height: 220px;
+  padding: 0;
 }
 .main__item-title-link {
   color: $textcolor;
@@ -114,9 +126,9 @@ $block_height_lg: 309px;
     text-decoration: none;
   }
 }
-.main__item-img main__item-img_1,
+.main__item-img.main__item-img_1,
 .main__item-img-link {
-  display: none;
+  //display: none;
 }
 .main__item-body-paddingbox,
 .main__item-body-paddingbox_1,
@@ -187,7 +199,15 @@ $block_height_lg: 309px;
 }
 
 @media (min-width: 992px) {
-  .main__item-img main__item-img_1,
+  .main__item-img {
+    &.main__item-img_2 {
+      height: 252px;
+    }
+  }
+  .main__item-img-link {
+    height: unset;
+  }
+  .main__item-img.main__item-img_1,
   .main__item-img-link {
     display: block;
   }
@@ -197,10 +217,10 @@ $block_height_lg: 309px;
   }
   .main__item-body-paddingbox_1 {
     padding: 25px 24px;
-    height: $block_height_md * 1.43254;C
+    height: $block_height_md * 1.43254;
 
     .main__item-content {
-      max-height: 250px;
+      max-height: 220px;
     }
   }
   .main__item-body-paddingbox_2 {
@@ -213,11 +233,9 @@ $block_height_lg: 309px;
       padding-left: 0;
     }
   }
-  .main__item-img_2 {
-    height: 252px;
-  }
   .main__item-img-link {
     padding-left: 0;
+    padding-right: 15px;
   }
   .main__item-link {
     bottom: 20px;
@@ -270,8 +288,10 @@ $block_height_lg: 309px;
       height: 212px;
     }
   }
-  .main__item-img_2 {
-    height: 309px;
+  .main__item-img {
+    &.main__item-img_2 {
+      height: 309px;
+    }
   }
   .main__item-content {
     max-height: 176px;

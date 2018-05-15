@@ -322,7 +322,7 @@ $menu_color: $darkgray;
   }
   .header__dark {
     &:before {
-      height: 43px;
+      height: 44px;
     }
   }
   .header__social {
@@ -494,7 +494,7 @@ $menu_color: $darkgray;
   }
   .header__dark {
     &:before {
-      height: 44px;
+      height: 45px;
     }
   }
   .header__title1 {
@@ -560,6 +560,9 @@ $menu_color: $darkgray;
   .header__item-link {
     display: inline;
     line-height: unset;
+  }
+  .header__title2 {
+    min-height: 46px;
   }
 }
 @media (min-width: 1200px) {
